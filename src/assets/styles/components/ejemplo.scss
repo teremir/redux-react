@@ -1,0 +1,9 @@
+.btn {
+  @include transition(opacity .1s ease, background-color .1s ease, color .1s ease, border-color .1s ease);
+
+  &:hover,
+  &:focus {
+    filter: alpha(opacity = 80);
+    opacity: .8;
+  }
+}
